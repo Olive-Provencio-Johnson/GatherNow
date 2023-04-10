@@ -3,6 +3,10 @@
     --secondary: #0D1F2D;
     --button: #546A7B;
 }
+.logInPage{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 .Wallpaper {
     background-image: url(../assets/background-filler.avif);
     background-size: cover;
