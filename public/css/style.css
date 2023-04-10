@@ -1,0 +1,43 @@
+:root{
+    --primary: #9EA3B0;
+    --secondary: #0D1F2D;
+    --button: #546A7B;
+}
+.Wallpaper {
+    background-image: url(../assets/background-filler.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.cborder{
+    background-color: var(--secondary);
+    padding: 2px;
+}
+.head{
+    background-color: var(--secondary);
+    color: white;
+}
+.card-body{
+    background-color: var(--primary);
+}
+.submit{
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+.submit:hover {
+    background-color: var(--button);
+}
+.status {
+    color: var(--secondary);
+}
+.SULoginToggle{
+    cursor: pointer;
+    color: var(--secondary);
+    text-decoration: none;
+}
+.SULoginToggle:hover{
+    color: white
+}

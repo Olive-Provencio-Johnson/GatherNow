@@ -22,3 +22,9 @@ const Submission = async (event) => {
 }
 
 document.querySelector('.login-form').addEventListener('submit', Submission)
+
+document.querySelector('.SUToggle').addEventListener("click", ()=> {
+    document.querySelector('.signUpContainer').classList.remove('d-none')
+    document.querySelector('.logInContainer').classList.add('d-none')
+    logInStatus.textContent = ''
+  })

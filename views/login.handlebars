@@ -1,44 +1,63 @@
-<div class="m-5 vw-90 text-center">
-  <h2 class="text-light m-5">Login</h2>
-  <form class="form login-form">
-    <div class="form-group text">
-      <label for="email" class="text-light" style="display: block; text-align: center;">email:</label>
-      <input class="form-input" type="text" id="email" />
-    </div>
-    <div class="form-group" style="display: inline-block; vertical-align: middle;">
-      <label for="password" class="text-light" style="display: block; text-align: center;">password:</label>
-      <input class="form-input" type="password" id="password" />
-    </div>
-    <div class="form-group">
-      <button class="btn btn-primary m-2" type="submit">login</button>
-    </div>
-    <div class = "text-light" id = "login-status"></div>
-  </form>
-</div>
-<div class="m-5 vw-90 text-center">
-  <h2 class="text-light m-5">Sign Up</h2>
-  <form class="form signup-form">
-        <div class="form-group text">
-      <label for="userName" class="text-light" style="display: block; text-align: center;">User Name:</label>
-      <input class="form-input" type="text" id="userName" />
+<div class="logInContainer">
+  <div class="row Wallpaper justify-content-center align-items-center vh-100">
+    <div class="col-md-4">
+      <div class="card cborder">
+        <div class="card-header head">
+          <h4 class="card-title text-center">Login</h4>
+        </div>
+        <div class="card-body">
+          <form class = "login-form text-center">
+            <div class="form-group m-3">
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group m-3">
+              <input type="password" class="form-control " id="password" placeholder="Password">
+            </div>
+            <small id ="login-status" class="status"></small>
+            <div class = "form-group m-3">
+              <button type="submit" class="justify-content-center submit">Sign In</button>
+            </div>
+            <div class ="form-group m-3">
+              <a class="SUToggle SULoginToggle">Not Registered? Sign Up</a>
+            </div>
+          </form>
+        </div>
       </div>
-    <div class="form-group text">
-      <label for="suEmail" class="text-light" style="display: block; text-align: center;">Email:</label>
-      <input class="form-input" type="text" id="suEmail" />
     </div>
-    <div class="form-group" style="display: block; vertical-align: middle;">
-      <label for="suPassword" class="text-light" style="display: block; text-align: center;">Password:</label>
-      <input class="form-input" type="password" id="suPassword" />
+  </div>
+  </div>
+  <div class="signUpContainer d-none">
+  <div class="row Wallpaper justify-content-center align-items-center vh-100">
+    <div class="col-md-4">
+      <div class="card cborder">
+        <div class="card-header head">
+          <h4 class="card-title text-center">Sign Up</h4>
+        </div>
+        <div class="card-body login-body">
+          <form class = "signup-form text-center">
+            <div class="form-group m-3">
+              <input type="text" class="form-control" id="userName" aria-describedby="userName" placeholder="Enter Username">
+            </div>
+            <div class="form-group m-3">
+              <input type="email" class="form-control" id="suEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+            </div>
+            <div class="form-group m-3">
+              <input type="password" class="form-control " id="suPassword" placeholder="Set Password">
+            </div>
+            <div class="form-group m-3">
+              <input type="password" class="form-control " id="suPassword2" placeholder="Confirm Password">
+            </div>
+            <small id ="signup-status" class="status"></small>
+            <div class ="form-group m-3">
+              <button type="submit" class="submit justify-content-center">Submit</button>
+            </div>
+            <div class ="form-group m-3">
+              <a class="loginToggle SULoginToggle">Already Registered? Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="form-group" style="display: block; vertical-align: middle;">
-      <label for="suPassword2" class="text-light" style="display: block; text-align: center;">Confirm Password</label>
-      <input class="form-input" type="password" id="suPassword2" />
-    </div>
-    <div class="form-group">
-      <button class="btn btn-primary m-2" type="submit">Sign Up</button>
-      <div id="signup-status" class = "text-light"></div>
-    </div>
-  </form>
-</div>
+  </div>
 <script src="/js/login.js"></script>
 <script src="/js/signup.js"></script>
