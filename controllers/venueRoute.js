@@ -1,12 +1,39 @@
 const router = require('express').Router();
 const { Venue } = require('../../models/venue.js')
 
-router.post('/venue', async (req, res) => {
-    try {
-        const venueData = await Venue.findOne({ where: { name: req.body.venueName } })
-        if (!venueData || !(await venueData.selectVenue(req.body.venueName))) {
-            res.status(404).json({ message: 'Venue not found' })
-            return;
-        }
+//hard coded for testing purposes
+const venues = [
+    {
+      id: 1,
+      venue_name: 'Venue 1',
+      capacity: 10,
+    },
+    {
+        id: 2,
+        venue_name: 'Venue 2',
+        capacity: 20,
+      },
+      {
+        id: 3,
+        venue_name: 'Venue 3',
+        capacity: 35,
+      },
+      {
+        id: 4,
+        venue_name: 'Venue 4',
+        capacity: 40,
+      },
+      {
+        id: 5,
+        venue_name: 'Venue 5',
+        capacity: 50,
+      },
+    
+  ];
 
-        req.session.venueName = venueData.id
+
+router.get('/', async (req, res) => {
+    res.render('all', {venues});
+  });
+
+  module.exports = router;

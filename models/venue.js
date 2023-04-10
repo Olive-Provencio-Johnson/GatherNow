@@ -1,46 +1,32 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
-const { v4: uuidv4 } = require("uuid");
+// Here is where we set up our Venue model, for when we are ready to connect to a database.
 
-class Venue extends Model {
-  selectVenue(venueId) {
-    return `SELECT * FROM venue WHERE id = ${venueId}`;
-  }
-  // this.hasMany(user, {foreignKey: "user_id"});
-}
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
+
+class Venue extends Model {}
 
 Venue.init(
   {
     id: {
-      type: DataTypes.UUID,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      defaultValue: () => uuidv4(),
+      autoIncrement: true,
     },
-    venueName: {
+    venue_name: {
       type: DataTypes.STRING,
       allowNull: false,
-      // not sure that we need the next six lines if we are not allowing customers to input new rooms or venues. (if for single small business use only)
-      validate: {
-        notEmpty: true,
-        len: [3, 40],
-        isAlpha: function (value) {
-          return /^[a-zA-Z ]*$/.test(value);
-        },
-      },
+    },
+    capacity: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
   },
   {
-    hooks: {
-      beforeSelect: async (newVenueData) => {
-        newVenueData.password = await bcrypt.hash(newUserData.password, 4);
-        return newUserData;
-      },
-    },
     sequelize,
+    freezeTableName: true,
     underscored: true,
-    timestamps: false,
-    createdAt: false,
+    modelName: 'venue',
   }
 );
 
