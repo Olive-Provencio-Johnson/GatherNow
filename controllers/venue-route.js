@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Venue } = require('../../models/venue.js')
+const { Venue } = require('../models/venue.js')
 
 //hard coded for testing purposes
 const venues = [
@@ -32,7 +32,7 @@ const venues = [
   ];
 
 
-router.get('/', async (req, res) => {
+router.get('api/venues', async (req, res) => {
     res.render('all', {venues});
   });
 
