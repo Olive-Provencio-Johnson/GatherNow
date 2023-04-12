@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Venue } = require('../../models');
+const { Venue } = require('../models');
 
 router.get('/:id', async (req, res) => {
     try {
@@ -24,3 +24,5 @@ router.get('/', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+module.exports = router;

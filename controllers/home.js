@@ -15,4 +15,4 @@ if (req.session.logged_in) {
 res.render('login');
 });
 
-module.exports = router
+module.exports = router;
