@@ -32,8 +32,14 @@ const venues = [
   ];
 
 
-router.get('/', async (req, res) => {
-    res.render('all', {venues});
+  router.get('/', async (req, res) => {
+    // find all tags
+    try {
+      const allTags = await Tag.findAll({include: Product});
+      res.status(200).json({ allTags, message: "All Tags Retrieved!" });
+    } catch (err) {
+      console.error(err);
+    }
   });
 
   module.exports = router;

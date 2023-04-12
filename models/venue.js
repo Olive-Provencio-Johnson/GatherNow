@@ -21,6 +21,10 @@ Venue.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    has_availability: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+    }      
   },
   {
     sequelize,
