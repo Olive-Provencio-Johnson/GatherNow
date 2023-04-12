@@ -46,4 +46,4 @@ router.post('/signup', async (req, res) => {
         res.status(500).json({ message: 'Signup Failed' });
     }
 })
-module.exports = router
+module.exports = router;

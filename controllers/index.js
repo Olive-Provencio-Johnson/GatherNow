@@ -1,11 +1,11 @@
 const router = require("express").Router();
 const apiRoutes = require("./api");
-const homeRoutes = require("./venue-routes");
-const selectSpace = require("./select-space");
+const homeRoute = require('./home')
+const selectedSpace = require("./selected-space");
 
 router.use("/api", apiRoutes);
-router.use("/", homeRoutes);
-router.use("/select-space", selectSpace);
+router.use("/", homeRoute)
+router.use("/select-space", selectedSpace);
 
 module.exports = router;
 
