@@ -1,47 +1,175 @@
-:root{
-    --primary: #9EA3B0;
-    --secondary: #0D1F2D;
-    --button: #546A7B;
+:root {
+  --primary: #9ea3b0;
+  --secondary: #0d1f2d;
+  --tertiary: #3c8e25;
+  --quatrinary: #6c6b67;
+  --button: #546a7b;
+  --light: #ebebeb;
+  --dark: #182c23;
+  --available: rgb(20, 228, 1);
+  --border-radius: 1px;
 }
-.logInPage{
-    overflow-x: hidden;
-    overflow-y: hidden;
+.logInPage {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .Wallpaper {
-    background-image: url(../assets/background-filler.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; 
+  background-image: url(../assets/background-filler.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.cborder{
-    background-color: var(--secondary);
-    padding: 2px;
+.cborder {
+  background-color: var(--secondary);
+  padding: 2px;
 }
-.head{
-    background-color: var(--secondary);
-    color: white;
+.head {
+  background-color: var(--secondary);
+  color: white;
 }
-.card-body{
-    background-color: var(--primary);
+.card-body {
+  background-color: var(--primary);
 }
-.submit{
-    background-color: var(--secondary);
-    color: white;
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
+.submit {
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
 }
 .submit:hover {
-    background-color: var(--button);
+  background-color: var(--button);
 }
 .status {
-    color: var(--secondary);
+  color: var(--secondary);
 }
-.SULoginToggle{
-    cursor: pointer;
-    color: var(--secondary);
-    text-decoration: none;
+.SULoginToggle {
+  cursor: pointer;
+  color: var(--secondary);
+  text-decoration: none;
 }
-.SULoginToggle:hover{
-    color: white
+.SULoginToggle:hover {
+  color: white;
 }
+
+body {
+  font-family: Arial;
+  margin: 0;
+  /* display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start; */
+  background-color: var(--quatrinary);
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: var(--primary);
+  color: var(--secondary);
+  border-bottom-style: solid;
+}
+
+/* main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  } */
+
+/* aside {
+    flex: 0;
+    background-color: var(--tertiary);
+    padding: 80px;
+    text-align: left;
+    color: var(--light);
+  } */
+
+nav {
+  display: flex;
+  background-color: var(--secondary);
+}
+
+/* CARDS */
+.venue-card {
+  margin: 20px;
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+  /* border-style: solid;
+    border-width: medium; */
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.card-text {
+  margin: 5px;
+  padding: 5px;
+  border: 3px solid var(--dark);
+  border-radius: var(--border-radius);
+  border-style: groove;
+  border-width: thick;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.card {
+  border: none;
+  margin-bottom: 1rem;
+  padding: 3.5rem;
+}
+
+.has-available {
+  color: var(--available);
+}
+
+/* .card-body {
+    padding: 5px;
+    /* font-size: 50px; */
+/* text-align: left;
+  } */
+
+/*   
+  LAYOUT
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    align-items: center;
+  } */
+
+/* Add or Edit a Venue */
+
+/* .add-venue-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    min-height: 100%;
+    min-width: 35%;
+    margin: 5px auto;
+    border: 3px solid var(--primary);
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: medium;
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 50px;
+    text-align: center;
+    background-color: var(--tertiary);
+  } */
+
+/* .edit-venue-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    min-height: 100%;
+    min-width: 35%;
+    margin: 5px auto;
+    border: 3px solid var(--primary);
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: medium;
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 50px;
+    text-align: center;
+    background-color: var(--tertiary);
+  } */

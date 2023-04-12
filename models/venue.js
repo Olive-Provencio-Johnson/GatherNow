@@ -1,4 +1,4 @@
-// Here is where we set up our Venue model, for when we are ready to connect to a database.
+// Venue model for when we are ready to connect to a database 
 
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
@@ -29,5 +29,6 @@ Venue.init(
     modelName: 'venue',
   }
 );
+
 
 module.exports = Venue;
