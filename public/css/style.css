@@ -1,0 +1,290 @@
+:root {
+  --primary: #9ea3b0;
+  --secondary: #0d1f2d;
+  --tertiary: #3c8e25;
+  --quatrinary: #6c6b67;
+  --button: #546a7b;
+  --light: #ebebeb;
+  --dark: #182c23;
+  --available: rgb(20, 228, 1);
+  --border-radius: 1px;
+}
+.logInPage {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.Wallpaper {
+  background-image: url(../assets/background-filler.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.cborder {
+  background-color: var(--secondary);
+  padding: 2px;
+}
+.head {
+  background-color: var(--secondary);
+  color: white;
+}
+.card-body {
+  background-color: var(--primary);
+}
+.submit {
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+}
+.submit:hover {
+  background-color: var(--button);
+}
+.status {
+  color: var(--secondary);
+}
+.SULoginToggle {
+  cursor: pointer;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.SULoginToggle:hover {
+  color: white;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  background-color: var(--quatrinary);
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: var(--primary);
+  color: var(--secondary);
+  border-bottom-style: solid;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+aside {
+    flex: 0;
+    background-color: var(--tertiary);
+    padding: 80px;
+    text-align: left;
+    color: var(--light);
+  }
+
+nav {
+  display: flex;
+  background-color: var(--secondary);
+}
+
+/* CARDS */
+.venue-card {
+  margin: 20px;
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+  /* border-style: solid;
+    border-width: medium; */
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.card-text {
+  margin: 5px;
+  padding: 5px;
+  border: 3px solid var(--dark);
+  border-radius: var(--border-radius);
+  border-style: groove;
+  border-width: thick;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.card {
+  border: none;
+  margin-bottom: 1rem;
+  padding: 3.5rem;
+}
+
+.has-available {
+  color: var(--available);
+}
+
+/* .card-body {
+    padding: 5px;
+    /* font-size: 50px; */
+/* text-align: left;
+  } */
+
+  
+  /* LAYOUT */
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    align-items: center;
+  }
+
+/* Add or Edit a Venue */
+
+.add-venue-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    min-height: 100%;
+    min-width: 35%;
+    margin: 5px auto;
+    border: 3px solid var(--primary);
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: medium;
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 50px;
+    text-align: center;
+    background-color: var(--tertiary);
+  }
+
+.edit-venue-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    min-height: 100%;
+    min-width: 35%;
+    margin: 5px auto;
+    border: 3px solid var(--primary);
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: medium;
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 50px;
+    text-align: center;
+    background-color: var(--tertiary);
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+@media (max-width: 768px) {
+ 
+  .nav-list li {
+    font-size: 1rem;
+    padding: 0.25rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+ .calendar-view {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+body{
+    background-image: url("../../assets/digital.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(78, 127, 129);
+    background-color: cadetblue;
+    height: 80px;
+    width: 1400px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    font-size: x-large;
+}
+
+.sub_nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.sub_nav a {
+    text-decoration: none;
+    color: black;
+}
+
+ a:hover{
+    color: black;
+    background:lightgray;
+    text-decoration: underline;
+ }
+.nav-list{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 10px 5px 5px rgb(78, 127, 129);
+    background-color: cadetblue;
+    margin-top: 15px;
+    justify-content: center;
+    justify-content: space-around;
+    display: flex;
+    height: 30px;
+    width: 1400px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.room-detail{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 10px 5px 5px  rgb(78, 127, 129);
+    margin-top: 20px;
+    background-color: cadetblue;
+    width: 370px;
+    height: 500px;
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendar-view{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 10px 5px 5px rgb(78, 127, 129);
+    margin-top: 20px;
+    background-color: cadetblue;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

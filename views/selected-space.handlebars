@@ -1,5 +1,5 @@
 <nav class="nav-bar">
-    <div class="nav"> Selected Meeting </div>
+    <div class="nav"> Room {{venue.id}} </div>
 </nav>
 <div class="sub_nav">
     <ul class="nav-list">
@@ -12,15 +12,15 @@
 </div>
 <div class="content">
     <div class="room-detail">
-        [Selected Meeting Space from the Welcome/Logged In page]
+        Welcome To Room {{venue.id}}
 
-        Room Capacity
+        Room Capacity: {{venue.capacity}}
     </div>
     <div class="calendar-view">
         View Calendar/Availability Section
 
-        [Depending on which button is clicked in the nav bar above, then available options are displayed here]
-
-        See availability for selected room
+        <img href ="/calendar/{{venue.id}}" src = "./assets/calendar-filler.png">
+        See availability for Room {{venue.id}}
     </div>
 </div>
+<script src="./js/logout.js"></script>
