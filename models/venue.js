@@ -1,5 +1,3 @@
-// Venue model for when we are ready to connect to a database 
-
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
