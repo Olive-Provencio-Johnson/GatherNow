@@ -55,10 +55,10 @@
 body {
   font-family: Arial;
   margin: 0;
-  /* display: flex;
+  display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: flex-start; */
+    justify-content: flex-start;
   background-color: var(--quatrinary);
 }
 
@@ -70,19 +70,19 @@ header {
   border-bottom-style: solid;
 }
 
-/* main {
+main {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-  } */
+  }
 
-/* aside {
+aside {
     flex: 0;
     background-color: var(--tertiary);
     padding: 80px;
     text-align: left;
     color: var(--light);
-  } */
+  }
 
 nav {
   display: flex;
@@ -127,18 +127,18 @@ nav {
 /* text-align: left;
   } */
 
-/*   
-  LAYOUT
+  
+  /* LAYOUT */
   .container {
     display: flex;
     flex-flow: column wrap;
     align-content: flex-start;
     align-items: center;
-  } */
+  }
 
 /* Add or Edit a Venue */
 
-/* .add-venue-container {
+.add-venue-container {
     display: flex;
     flex-wrap: wrap;
     width: 35%;
@@ -154,9 +154,9 @@ nav {
     padding: 50px;
     text-align: center;
     background-color: var(--tertiary);
-  } */
+  }
 
-/* .edit-venue-container {
+.edit-venue-container {
     display: flex;
     flex-wrap: wrap;
     width: 35%;
@@ -172,7 +172,7 @@ nav {
     padding: 50px;
     text-align: center;
     background-color: var(--tertiary);
-  } */
+  }
 
   * {
     box-sizing: border-box;

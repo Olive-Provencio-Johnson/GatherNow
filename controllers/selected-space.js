@@ -20,8 +20,7 @@ router.get('/:id', async (req, res) => {
 
 router.get('/', async (req, res) => {
     try {
-        res.render('selected-space');
-        res.status(200);
+        res.status(200).render('selected-space');
     } catch (err) {
         res.status(500).json(err);
     }
