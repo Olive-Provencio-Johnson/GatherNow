@@ -1,8 +1,7 @@
 const sequelize = require('../config/connection');
-const { User, Venue } = require('../models');
-
+const { User } = require('../models');
 const userSeedInfo = require('./userSeeds.json');
-const venueSeedInfo = require('./venueSeeds.json');
+const venueSeeds = require('./venue-seeds')
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -12,9 +11,8 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  await Venue.bulkCreate(venueSeedInfo, {
-    returning: true,
-  });
+  await venueSeeds
+
   process.exit(0);
 };
 

@@ -1,14 +1,13 @@
 <nav class="nav-bar">
-    <div class="nav">Welcome! Please select a venue from the list below </div>
+    <div class="nav"> Welcome! Make a selection from the venues below </div>
 </nav>
 <div class="sub_nav">
     <ul class="nav-list">
-        <li><a href="/">Logout</a></li>
+        <li><button class="btn text-center vw-100 text-white" id="logout">logout</button></li>
     </ul>
 </div>
 
-<div class="row flex-direction-row flex-wrap-wrap justify-content-space-between">
- 
+<div class="row flex-direction-row flex-wrap-wrap justify-content-space-between"> 
   <div class="row">
      {{#each venues as |venue|}}
       <div class="card d-flex p-5 justify-content-space-evenly">
@@ -20,10 +19,7 @@
       </div>
       {{/each}}
   </div>
-  {{!-- <button
-        class="btn text-center vw-100 text-white"
-        id="logout"
-      >logout</button>
-      <script src="/js/logout.js"></script> --}}
+
+      <script src="/js/logout.js"></script>
     </div>
 </div>

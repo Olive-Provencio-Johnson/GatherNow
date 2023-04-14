@@ -1,8 +1,6 @@
-const router = require("express").Router();
-const withAuth = require("../utils/auth");
-const { Venue } = require('../../models/venue.js');
+const router = require('express').Router()
+const withAuth = require('../utils/auth')
 
-//hard coded for testing purposes
 const venues = [
   {
     id: 1,
@@ -33,15 +31,16 @@ const venues = [
 ];
 
 
-router.get("/", withAuth, async (req, res) => {
-  res.render("home", {
-    logged_in: req.session.logged_in,
-  });
-});
+router.get('/', withAuth, async (req, res) => {
+    res.render('home', {
+      venues: venues,
+      logged_in: req.session.logged_in
+    })
+  })
 
-router.get("/login", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/");
+router.get('/login', (req, res) => {
+if (req.session.logged_in) {
+    res.redirect('/');
     return;
   }
   res.render("login");
