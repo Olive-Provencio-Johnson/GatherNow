@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     {}
   ],
 });
-
 // Calendar render function
 calendar.render();
-
 });
