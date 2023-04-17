@@ -2,7 +2,7 @@ const router = require('express').Router()
 const withAuth = require('../utils/auth')
 const { Venue } = require('../models')
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
   const allVenues = await Venue.findAll();
     res.render('home', {
       venues: allVenues,
@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     })
   })
 
-router.get('/login', (req, res) => {
+router.get('/login', withAuth, (req, res) => {
 if (req.session.logged_in) {
     res.redirect('/');
     return;

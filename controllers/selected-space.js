@@ -1,7 +1,8 @@
 const router = require('express').Router();
+const withAuth = require('../utils/auth');
 const { Venue } = require('../models');
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', withAuth, async (req, res) => {
     try {
         const venueData = await Venue.findOne({
             where: {
@@ -18,7 +19,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
         res.status(200).render('selected-space');
     } catch (err) {
