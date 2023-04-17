@@ -11,12 +11,24 @@ Venue.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    venue_name: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     capacity: {
       type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    computer: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+    },
+    projector: {
+      type: DataTypes.BOOLEAN,
       allowNull: false,
     },
     has_availability: {
