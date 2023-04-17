@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Waystar Room", 
+        "capacity": 25,
+        "description": "Boasts panoramic views of the city. Great for intimidating your staff and showing them who's boss.",
+        "computer": true, 
+        "projector": false,
+        "has_availability": false
+    },
+    {
+        "id": 2,
+        "name": "Private Jet",
+        "capacity": 20,
+        "description": "Perfect for that meeting that just can't wait until your transatlantic destination. Book this space for just $11,000 per billable hour, taken directly out of your department's budget.",
+        "computer": true, 
+        "projector": false,
+        "has_availability": false
+    },
+    {
+        "id": 3,
+        "name": "Willa Room",
+        "capacity": 50,
+        "description": "This space is great for team improv sessions (or any aspiring playwrights in your midst). Studies show that improv helps improve public speaking skills.",
+        "computer": true, 
+        "projector": true,
+        "has_availability": false
+    },
+    {
+        "id": 4,
+        "name": "Siobhan Room",
+        "capacity": 75,
+        "description": "Have a major company wide announcement to make? This room provides two large projector screens and a podium for all your public speaking needs.",
+        "computer": true, 
+        "projector": true,
+        "has_availability": false
+    },
+    {
+        "id": 5,
+        "name": "Logan Room",
+        "capacity": 10,
+        "description": "Bright and airy. This room is designed for smaller team meetings.",
+        "computer": true, 
+        "projector": false,
+        "has_availability": false
+    },
+    {
+        "id": 6,
+        "name": "Dining Room",
+        "capacity": 16,
+        "description": "Plan your next dark, yet tasteful team dinner.",
+        "computer": false, 
+        "projector": false,
+        "has_availability": false
+    }
+  ]

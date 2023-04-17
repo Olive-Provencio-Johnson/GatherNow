@@ -1,5 +1,28 @@
-<div class = "bg-dark">
-    <h2 class = 'text-center my-5 text-white'>{{get_data}}</h2>
-    <button class="btn text-center vw-100 text-white" id="logout">logout</button>
-    <script src ='/js/logout.js'></script>
+<nav class="nav-bar">
+    <img class="logo" src="/assets/gnlogo.png" />
+    <div class="nav">Where would you like to gather?</div>
+</nav>
+<div class="sub_nav">
+    <ul class="nav-list">
+        <li><button class="btn text-center vw-100 text-white" id="logout">logout</button></li>
+    </ul>
+</div>
+
+<div class="row flex-direction-row flex-wrap-wrap justify-content-space-between"> 
+  <div class="row">
+     {{#each venues as |venue|}}
+      <div class="card d-flex p-5 justify-content-space-evenly" style="width: 45%">
+        <div class="card-body col-sm" style="background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; padding: 0px">
+          <img src="/assets/{{venue.id}}.jpeg" style="width: 100%">
+           <h5 class="venue-card" style="background: none; border: none"> {{venue.name}} </h5>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Capacity:{{venue.capacity}}</p>
+          <a href="/select-space/{{venue.id}}" class="btn btn-primary" style="width: 100%">Reserve</a>
+        </div>
+      </div>
+      {{/each}}
+  </div>
+
+      <script src="/js/logout.js"></script>
+    </div>
 </div>

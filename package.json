@@ -4,13 +4,20 @@
   "description": "login functionality using handlebars",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "bundle": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fullcalendar/core": "^6.1.5",
+    "@fullcalendar/daygrid": "^6.1.5",
+    "@fullcalendar/interaction": "^6.1.5",
+    "@fullcalendar/timegrid": "^6.1.5",
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "express-handlebars": "^7.0.4",
     "express-session": "^1.17.3",
@@ -18,5 +25,9 @@
     "mysql2": "^3.2.0",
     "sequelize": "^6.3.5",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
   }
 }

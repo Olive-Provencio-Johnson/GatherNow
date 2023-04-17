@@ -71,3 +71,9 @@ const signUp = async (event) => {
   }
 };
 document.querySelector(".signup-form").addEventListener("submit", signUp);
+
+document.querySelector('.loginToggle').addEventListener("click", ()=> {
+  document.querySelector('.signUpContainer').classList.add('d-none')
+  document.querySelector('.logInContainer').classList.remove('d-none')
+  SUstatus.textContent = ''
+})
