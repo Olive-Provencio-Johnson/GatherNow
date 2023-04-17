@@ -9,7 +9,7 @@
 </div>
 
 <div class="row flex-direction-row flex-wrap-wrap justify-content-space-between"> 
-  <div class="row">
+  <div class="row-card">
      {{#each venues as |venue|}}
       <div class="card d-flex p-5 justify-content-space-evenly" style="width: 45%">
         <div class="card-body col-sm" style="background-color: white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -17,8 +17,8 @@
           <img src="/assets/{{venue.id}}.jpeg" style="width: 100%">
            <h5 class="venue-card" style="background: none; border: none"> {{venue.name}} </h5>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;Capacity:{{venue.capacity}}</p>
-          <a href="/select-space/{{venue.id}}" class="btn btn-primary" style="width: 100%">Reserve</a>
         </div>
+         <a href="/select-space/{{venue.id}}" class="btn btn-primary" style="width: 100%; border-radius: 0px 0px 5px 5px">Reserve</a>
       </div>
       {{/each}}
   </div>
