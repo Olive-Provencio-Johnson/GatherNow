@@ -1,0 +1,32 @@
+[
+    {
+        "res_title":"Name1",
+        "res_creator": "Name1",
+        "res_start": "2023-04-15T09:00:00",
+        "res_end" : "2023-04-15T18:00:00"
+    },
+    {
+        "res_title":"Name2",
+        "res_creator": "Name2",
+        "res_start": "2023-04-16T09:00:00",
+        "res_end" : "2023-04-16T18:00:00"
+    },
+    {
+        "res_title":"Name3",
+        "res_creator": "Name3",
+        "res_start": "2023-04-17T09:00:00",
+        "res_end" : "2023-04-17T18:00:00"
+    },
+    {
+        "res_title":"Name4",
+        "res_creator": "Name4",
+        "res_start": "2023-04-18T09:00:00",
+        "res_end" : "2023-04-18T18:00:00"
+    },
+    {
+        "res_title":"Name5",
+        "res_creator": "Name5",
+        "res_start": "2023-04-19T09:00:00",
+        "res_end" : "2023-04-19T18:00:00"
+    }
+]
