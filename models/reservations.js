@@ -9,27 +9,25 @@ Reservations.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        res_desc: {
-            type: DataTypes.STRING,
-            allowNull: true,
-        },
         res_creator: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        res_group: {
-            type: DataTypes.STRING,
-            allowNull: true,
-        },
         res_start: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DATE,
             allowNull: false,
         },
         res_end: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DATE,
             allowNull: false,
         }
-    }
+    },
+    {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'Reservations',
+      }
 );
 
 module.exports = Reservations
