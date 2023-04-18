@@ -8,7 +8,6 @@ router.get("/", async (req, res) => {
       title: reservation.res_title,
       start: reservation.res_start,
       end: reservation.res_end,
-      editable: true,
     }));
     res.status(200).json(events);
   } catch (err) {
@@ -17,4 +16,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.post("/addNew", async (req, res) => {
+  try{
+    const created = await Reservations.create(
+      {
+        res_title: req.body.newEvent.res_title,
+        res_creator: req.body.newEvent.res_organizer,
+        res_start: req.body.newEvent.res_start,
+        res_end:req.body.newEvent.res_end,
+      }
+    )
+  } catch(err){
+    console.error(err)
+  }
+})
 module.exports = router

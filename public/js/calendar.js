@@ -4,8 +4,6 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 
-// events.push(user input) array.push(sequelize data)
-// events.delete(user input) array.filter((element) => element.id !== id)
 // Listens to webpage + creates calendar on HTML load
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -17,26 +15,36 @@ document.addEventListener("DOMContentLoaded", async () => {
     let calendar = new Calendar(calendarHandlebar, {
       plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
       initialView: "dayGridMonth",
-      editable: true,
       selectable: true,
+      select: async (info) => {
+        try {
+          const eventName = prompt("Enter the name of your event");
+          const eventOrganizer = prompt("Enter your name");
+          if (eventName && eventOrganizer !== null) {
+            const newEvent = {
+              res_title: eventName,
+              res_organizer: eventOrganizer,
+              res_start: info.start.toISOString(),
+              res_end: info.end.toISOString(),
+            };
+            const response = await fetch("/api/CAData/addNew", {
+              method: "POST",
+              body: JSON.stringify({ newEvent }),
+              headers: { "Content-Type": "application/json" },
+            });
+          } else {
+            alert("Input Fields Cannot Be Empty");
+          }
+        } catch (err) {
+          console.error(err);
+        }
+      },
       // Reservations on webpage, will be able to dynamically add using get/post
       events: events,
     });
     // Calendar render function
     calendar.render();
-    // document.querySelector('#addToCalendar').addEventListener('click', () => {
-    // })
   } catch (err) {
     console.error(err);
   }
 });
-
-async function CDataFetch() {
-  try {
-    const calData = await fetch("/api/CAData");
-    const events = await calData.json();
-    console.log(events);
-  } catch (err) {
-    console.error(err);
-  }
-}

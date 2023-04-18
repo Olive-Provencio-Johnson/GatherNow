@@ -16,8 +16,6 @@ const seedDatabase = async () => {
 
   await Reservations.bulkCreate(reservationSeeds);
 
-  console.log("List Of Current Database Below")
-  console.log( await Reservations.findAll())
   process.exit(0);
 };
 
