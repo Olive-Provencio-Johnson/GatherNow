@@ -40,16 +40,16 @@ This application was deployed using Heroku.
 ![Home Page](./public/assets/home.png)
 Once a space is selected, users receive information about that space, as well as a link to the calendar
 ![Once a space is selected, users receive information about that space, as well as a link to the calendar](./public/assets/selectedspace.png)
-![Calendar Page](./public/assets/calendarpage.png)
+![Calendar Page](./public/assets/calendarpage.jpg)
 [Link to live webpage](https://boiling-mesa-08063.herokuapp.com/)
 
 
 ## Credits
 
-![Mason Cox, @masonuw](https://github.com/masonuw)
-![Aboubacar Drago, @Aboubacar7](https://github.com/Aboubacar7)
-![Blayne Fuller @blayne-04](https://github.com/blayne-04)
-![Olive Provencio-J @Olive-Provencio-Johnson](https://github.com/Olive-Provencio-Johnson)
+[Mason Cox, @masonuw](https://github.com/masonuw)
+[Aboubacar Drago, @Aboubacar7](https://github.com/Aboubacar7)
+[Blayne Fuller @blayne-04](https://github.com/blayne-04)
+[Olive Provencio-J @Olive-Provencio-Johnson](https://github.com/Olive-Provencio-Johnson)
 
 
 ## License
