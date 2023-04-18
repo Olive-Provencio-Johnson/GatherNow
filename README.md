@@ -35,11 +35,12 @@ In the command line of your local repository, run the following line of code:
 
 This application was deployed using Heroku.
 
-![Sign-up](.public/assets/signup.jpg)
-![Registered User Login](.public/assets/login.jpg)
-![Home Page](.public/assets/home.jpg)
-![Once a space is selected, users receive information about that space, as well as a link to the calendar](.public/assets/selectedspace.jpg)
-![Calendar Page](.public/assets/calendarpage.jpg)
+![Sign-up](./public/assets/signup.jpg)
+![Registered User Login](./public/assets/login.png)
+![Home Page](./public/assets/home.png)
+Once a space is selected, users receive information about that space, as well as a link to the calendar
+![Once a space is selected, users receive information about that space, as well as a link to the calendar](./public/assets/selectedspace.png)
+![Calendar Page](./public/assets/calendarpage.png)
 [Link to live webpage](https://boiling-mesa-08063.herokuapp.com/)
 
 
