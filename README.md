@@ -4,6 +4,16 @@
 
 This is a user friendly application that allows a user to effortlessly create their own room reservations for upcoming meetings and internal events within an organization
 
+## Motivation
+
+Our team wanted to create something useful that a company might need to help organize an otherwise tedious process for front desk staff
+
+## User-Story
+
+- As a small - mid-size company, we want a user-friendly application to help manage the logistics of employee room reservations for the spaces within our building used for meetings and events.
+- As a small - mid-size company, we want an application that accepts user input to reserve dates for specific rooms or venues on the calendar.
+
+
 ## Installation
 
 In order to deploy this application yourself, you first need to clone the repository. Next, make sure that you have installed the following node packages in your local repository. This will require the user to install the dependencies listed below. 
@@ -24,10 +34,13 @@ In the command line of your local repository, run the following line of code:
 ## Usage
 
 This application was deployed using Heroku.
-[[[Provide instructions and examples for use. Include screenshots as needed.]]]
 
-
-![Deployed Page](assets/images/[INCLUDE SCREENSHOT FILENAME HERE].png)
+![Sign-up](.public/assets/signup.jpg)
+![Registered User Login](.public/assets/login.jpg)
+![Home Page](.public/assets/home.jpg)
+![Once a space is selected, users receive information about that space, as well as a link to the calendar](.public/assets/selectedspace.jpg)
+![Calendar Page](.public/assets/calendarpage.jpg)
+[Link to live webpage](https://boiling-mesa-08063.herokuapp.com/)
 
 
 ## Credits
