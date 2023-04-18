@@ -8,9 +8,4 @@ module.exports = {
     publicPath: '/js/'
   },
   mode: 'production',
-  resolve: {
-    alias: {
-      sequelize$: path.resolve(__dirname, 'config', 'connection.js')
-    }
-  }
 };
