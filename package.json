@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node seeds/seed.js",
     "start": "node server.js",
-    "build": "webpack",
-    "heroku-postbuild": "npm run seed && npm run build && npm start"
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
