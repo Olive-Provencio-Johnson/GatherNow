@@ -7,12 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node seeds/seed.js",
     "start": "node server.js",
+    "build": "webpack",
     "heroku-postbuild": "npm run seed && npm run build && npm start"
   },
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "18.14.1"
+    "node": "18.x"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.5",
